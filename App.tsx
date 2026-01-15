@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState, useCallback } from 'react';
 import Navbar from './components/Navbar';
 import Logo from './components/Logo';
@@ -109,8 +108,8 @@ const App: React.FC = () => {
           <div className="relative animate-slide-up">
             <Card className="relative z-10 p-0 overflow-hidden" showGlow={true}>
               <img 
-                src="https://audioconcept.com.pa/wp-content/uploads/Logo-1200x630-1.jpg" 
-                alt="Audio Concept Event" 
+                src="https://elvenezolano.com.pa/wp-content/uploads/2019/09/Audioconcept-1.jpg" 
+                alt="Audio Concept Event Showcase" 
                 className="w-full h-auto opacity-70 hover:opacity-90 transition-opacity object-cover min-h-[300px]"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#0f0f0f] via-transparent to-transparent"></div>
