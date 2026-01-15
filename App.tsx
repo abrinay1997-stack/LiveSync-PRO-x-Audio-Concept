@@ -62,13 +62,13 @@ const App: React.FC = () => {
           <div className="animate-fade-in">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-xs font-bold uppercase tracking-widest mb-6">
               <Zap size={14} className="animate-pulse" />
-              Evento para Profesionales
+              Sesión Técnica Especializada
             </div>
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-6">
-              Engineering <span className="gradient-text">Summit</span>
+            <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold text-white leading-tight mb-6">
+              Precision Audio <span className="gradient-text">Lab for FOH</span>
             </h1>
             <p className="text-xl md:text-2xl text-slate-400 mb-8 max-w-xl font-light">
-              Eleva tu estándar en System Design. Una experiencia técnica exclusiva de LiveSync PRO × Audio Concept.
+              Domina la arquitectura de sistemas y optimiza tu flujo de trabajo FOH. Una experiencia técnica exclusiva de LiveSync PRO.
             </p>
             
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
@@ -98,10 +98,10 @@ const App: React.FC = () => {
                 className="px-10"
                 onClick={() => window.open(EVENT_DATA.registrationLink, '_blank')}
               >
-                Asegurar mi CUPO
+                Reservar mi Plaza
               </Button>
               <Button variant="ghost" onClick={() => document.getElementById('agenda')?.scrollIntoView({ behavior: 'smooth' })}>
-                Explorar el Contenido
+                Ver Plan de Despliegue
               </Button>
             </div>
           </div>
@@ -120,7 +120,7 @@ const App: React.FC = () => {
                   <span className="text-cyan-400 text-xs font-bold uppercase tracking-widest">Exclusivo</span>
                 </div>
                 <h3 className="text-white text-xl font-bold">Demostración Técnica</h3>
-                <p className="text-slate-400 text-sm">Flujos de trabajo reales para sistemas de gran escala.</p>
+                <p className="text-slate-400 text-sm">Escenarios reales y optimización de fase en tiempo real.</p>
               </div>
             </Card>
             <div className="absolute -top-4 -right-4 w-24 h-24 bg-purple-500/20 blur-2xl rounded-full"></div>
@@ -141,12 +141,12 @@ const App: React.FC = () => {
                   <Clock size={18} className="animate-pulse" />
                   <span className="text-xs font-bold uppercase tracking-[0.2em]">Cuenta Regresiva</span>
                 </div>
-                <h2 className="text-2xl md:text-3xl font-bold text-white">El Summit está por comenzar</h2>
-                <p className="text-slate-500 text-sm mt-1 italic">Prepárate para una jornada técnica sin precedentes.</p>
+                <h2 className="text-2xl md:text-3xl font-bold text-white">El Workshop está por comenzar</h2>
+                <p className="text-slate-500 text-sm mt-1 italic">Ingeniería aplicada al sonido profesional.</p>
               </div>
 
               <div className="flex flex-col items-center flex-1">
-                <span className="text-slate-500 uppercase text-[10px] tracking-widest mb-3">Tiempo restante para el evento</span>
+                <span className="text-slate-500 uppercase text-[10px] tracking-widest mb-3">Tiempo restante para la sesión</span>
                 <div className="flex gap-4 md:gap-8">
                   <div className="flex flex-col items-center min-w-[60px]">
                     <span className="text-3xl md:text-4xl font-black text-white font-mono tracking-tighter">
@@ -181,7 +181,7 @@ const App: React.FC = () => {
                   className="w-full md:w-auto px-12 py-4"
                   onClick={() => window.open(EVENT_DATA.registrationLink, '_blank')}
                 >
-                  Registrarme Ahora
+                  Inscribirme Ahora
                 </Button>
               </div>
             </div>
@@ -189,18 +189,18 @@ const App: React.FC = () => {
         </div>
       </section>
 
-      {/* About Summit */}
+      {/* About Section */}
       <section id="about" className="py-24 bg-[#06010f] px-6 md:px-12">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Un Taller para la <span className="text-cyan-400">Excelencia Técnica</span></h2>
-            <p className="text-slate-500 max-w-2xl mx-auto">Diseñado para profesionales que buscan dominar los flujos de trabajo más avanzados en la industria del sonido profesional.</p>
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Ingeniería para la <span className="text-cyan-400">Excelencia FOH</span></h2>
+            <p className="text-slate-500 max-w-2xl mx-auto">Un laboratorio práctico diseñado para dominar los flujos de trabajo más avanzados en el diseño de sistemas de audio profesional.</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <Card title="Propuesta Educativa" className="flex flex-col">
               <p className="text-slate-400 text-sm leading-relaxed mb-6">
-                Fusionamos fundamentos de ingeniería con demostraciones prácticas de alto nivel. Aprenderás a utilizar herramientas de precisión para garantizar resultados impecables en cada proyecto.
+                Fusionamos fundamentos de ingeniería con demostraciones prácticas de alto nivel. Aprenderás a utilizar herramientas de precisión para garantizar una mezcla impecable desde el FOH.
               </p>
               <div className="mt-auto flex items-center gap-3 text-cyan-400 font-bold text-sm tracking-wide">
                 <ShieldCheck size={18} /> Metodología Profesional
@@ -215,7 +215,7 @@ const App: React.FC = () => {
               </div>
               <div className="mt-auto">
                 <Button variant="ghost" className="w-full text-xs py-2" onClick={() => window.open('https://maps.app.goo.gl/u3U6zXWfU7k2R6J9A', '_blank')}>
-                  Cómo llegar
+                  Ver en el mapa
                 </Button>
               </div>
             </Card>
@@ -237,7 +237,7 @@ const App: React.FC = () => {
       <section id="agenda" className="py-24 px-6 md:px-12 bg-[#050505]">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 tracking-tight">Estructura del <span className="text-purple-500">Summit</span></h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 tracking-tight">Plan de <span className="text-purple-500">Despliegue Técnico</span></h2>
             <p className="text-slate-500">3 horas de inmersión total en el diseño de sistemas de alto rendimiento.</p>
           </div>
 
@@ -249,7 +249,7 @@ const App: React.FC = () => {
         </div>
       </section>
 
-      {/* Target Audience / Convenience Section */}
+      {/* Target Audience Section */}
       <section id="audience" className="py-24 bg-[#06010f] px-6 md:px-12 relative overflow-hidden">
         <div className="absolute top-1/2 left-0 w-full h-px bg-gradient-to-r from-transparent via-white/5 to-transparent"></div>
         
@@ -259,7 +259,7 @@ const App: React.FC = () => {
               Público Objetivo
             </div>
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">¿Para quién es <span className="text-cyan-400">conveniente</span> asistir?</h2>
-            <p className="text-slate-500 max-w-3xl mx-auto">El contenido del Summit ha sido curado para los roles que determinan el éxito técnico y comercial de una producción de alta gama.</p>
+            <p className="text-slate-500 max-w-3xl mx-auto">Contenido curado para ingenieros que operan en la primera línea de la producción sonora.</p>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -308,7 +308,7 @@ const App: React.FC = () => {
           <div className="flex flex-col items-center md:items-start">
             <Logo />
             <p className="text-slate-600 text-[10px] mt-6 uppercase tracking-widest text-center md:text-left">
-              © 2024 Engineering Summit. Un evento profesional de<br/>LiveSync PRO en colaboración con Audio Concept Panamá.
+              © 2024 Precision Pro Audio Lab. Un evento profesional de<br/>LiveSync PRO en colaboración con Audio Concept Panamá.
             </p>
           </div>
 
@@ -327,7 +327,7 @@ const App: React.FC = () => {
         <div className="space-y-4">
           <p>Este sitio web es operado por el equipo de Ingeniería de LiveSync PRO en colaboración con Audio Concept Panamá.</p>
           <h3 className="text-white font-bold">Responsabilidad Técnica</h3>
-          <p>La información técnica presentada durante el Summit tiene fines educativos y demostrativos. LiveSync PRO no se hace responsable por la implementación incorrecta de las metodologías discutidas fuera de un entorno controlado.</p>
+          <p>La información técnica presentada durante el Workshop tiene fines educativos y demostrativos.</p>
           <h3 className="text-white font-bold">Propiedad Intelectual</h3>
           <p>Todos los logotipos, marcas y software demostrados son propiedad exclusiva de sus respectivos dueños.</p>
         </div>
@@ -335,9 +335,9 @@ const App: React.FC = () => {
 
       <Modal isOpen={isPrivacyModalOpen} onClose={() => setIsPrivacyModalOpen(false)} title="Política de Privacidad">
         <div className="space-y-4">
-          <p>En cumplimiento con las normativas de protección de datos personales, informamos sobre el tratamiento de la información recolectada mediante el formulario de inscripción.</p>
+          <p>Informamos sobre el tratamiento de la información recolectada mediante el formulario de inscripción.</p>
           <h3 className="text-white font-bold">Recolección de Datos</h3>
-          <p>Recopilamos su nombre, correo electrónico y perfil profesional con el único propósito de gestionar su acceso al Engineering Summit.</p>
+          <p>Recopilamos su nombre, correo electrónico y perfil profesional para gestionar su acceso al Precision Pro Audio Lab.</p>
         </div>
       </Modal>
 

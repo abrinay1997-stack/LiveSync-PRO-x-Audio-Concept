@@ -16,8 +16,8 @@ export const COLORS = {
 };
 
 export const EVENT_DATA = {
-  name: "Engineering Summit: LiveSync PRO & Audio Concept",
-  concept: "Taller técnico avanzado y demostración de ingeniería en tiempo real",
+  name: "Precision Pro Audio Lab: LiveSync PRO & Audio Concept",
+  concept: "Taller técnico avanzado de diseño de sistemas y flujo de trabajo FOH",
   duration: "3 horas de inmersión técnica",
   location: "Showroom Audio Concept, Plaza 61, Obarrio, Panamá",
   capacity: "Cupos estrictamente limitados",
@@ -79,7 +79,7 @@ export const AGENDA: AgendaItem[] = [
     details: [
       "Presentación de beneficios especiales para asistentes",
       "Anuncio de certificaciones y próximos pasos",
-      "Networking final y cierre del Summit"
+      "Networking final y cierre del Workshop"
     ]
   }
 ];
@@ -94,9 +94,9 @@ export const OBJECTIVES: Objective[] = [
 
 export const AUDIENCE_PROFILES: AudienceProfile[] = [
   {
-    title: "Ingeniería y Diseño de Sistemas",
+    title: "Ingeniería FOH y Diseño de Sistemas",
     percentage: 100,
-    description: "Este evento es indispensable si tu objetivo es dominar flujos de trabajo de alta precisión, reducir tiempos de ajuste en sitio y garantizar una cobertura sonora uniforme en entornos acústicamente complejos.",
+    description: "Este Workshop es indispensable si tu objetivo es dominar flujos de trabajo de alta precisión, reducir tiempos de ajuste en sitio y garantizar una cobertura sonora uniforme para FOH en entornos acústicamente complejos.",
     items: [
       "Optimización de arreglos lineales",
       "Alineación de sistemas de fase avanzada",
@@ -107,7 +107,7 @@ export const AUDIENCE_PROFILES: AudienceProfile[] = [
   {
     title: "Producción y Gestión Estratégica",
     percentage: 100,
-    description: "Conveniente para líderes que necesitan validar el cumplimiento técnico de sus proveedores, optimizar presupuestos mediante planificación de ingeniería y elevar el estándar de calidad de sus producciones.",
+    description: "Conveniente para líderes que necesitan validar el cumplimiento técnico de sus proveedores, optimizar presupuestos mediante planificación de ingeniería y elevar el estándar de calidad sonora de sus producciones.",
     items: [
       "Criterios de validación técnica de proyectos",
       "Optimización de ROI en infraestructura AV",

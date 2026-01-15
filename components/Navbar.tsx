@@ -22,26 +22,26 @@ const Navbar: React.FC = () => {
       <div className="hidden md:flex gap-8 items-center text-sm font-medium">
         <button 
           onClick={() => scrollToSection('about')} 
-          className="text-slate-400 hover:text-cyan-400 transition-colors"
+          className="text-slate-400 hover:text-cyan-400 transition-colors uppercase tracking-widest text-[10px]"
         >
-          Summit
+          Lab
         </button>
         <button 
           onClick={() => scrollToSection('agenda')} 
-          className="text-slate-400 hover:text-cyan-400 transition-colors"
+          className="text-slate-400 hover:text-cyan-400 transition-colors uppercase tracking-widest text-[10px]"
         >
-          Agenda
+          Despliegue
         </button>
         <button 
           onClick={() => scrollToSection('audience')} 
-          className="text-slate-400 hover:text-cyan-400 transition-colors"
+          className="text-slate-400 hover:text-cyan-400 transition-colors uppercase tracking-widest text-[10px]"
         >
-          Público
+          Perfiles
         </button>
         <Button 
           variant="secondary" 
           onClick={() => window.open(EVENT_DATA.registrationLink, '_blank')}
-          className="py-2 text-sm"
+          className="py-2 text-[10px] uppercase tracking-widest"
         >
           Inscribirme
         </Button>
@@ -50,7 +50,7 @@ const Navbar: React.FC = () => {
         <Button 
           variant="secondary" 
           onClick={() => window.open(EVENT_DATA.registrationLink, '_blank')}
-          className="py-1.5 px-4 text-xs"
+          className="py-1.5 px-4 text-[10px] uppercase tracking-widest"
         >
           Inscribirme
         </Button>
