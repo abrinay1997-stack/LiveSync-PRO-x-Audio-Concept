@@ -80,8 +80,8 @@ const App: React.FC = () => {
             <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold text-white leading-tight mb-6 tracking-tight">
               Precision Audio <span className="gradient-text">Lab for FOH</span>
             </h1>
-            <p className="text-xl md:text-2xl text-slate-400 mb-8 max-w-xl font-light">
-              Domina la arquitectura de sistemas y optimiza tu flujo de trabajo FOH. Una experiencia técnica exclusiva de Audioconcept & LiveSync PRO.
+            <p className="text-xl md:text-2xl text-slate-400 mb-8 max-w-xl font-light leading-relaxed">
+              Domina la arquitectura de sistemas y optimiza tu flujo de trabajo FOH. Una experiencia técnica exclusiva de <span className="text-cyan-400 font-medium">Audioconcept</span> & <span className="text-purple-500 font-medium">LiveSync PRO.</span>
             </p>
             
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
@@ -187,7 +187,7 @@ const App: React.FC = () => {
                   className="w-full lg:w-auto px-8 py-4 text-sm uppercase tracking-widest"
                   onClick={() => window.open(EVENT_DATA.registrationLink, '_blank')}
                 >
-                  Obtener Cupo <ArrowRight className="inline-block ml-2" size={16} />
+                  Obtener Cupo <Zap className="inline-block ml-2 fill-current" size={16} />
                 </Button>
               </div>
             </div>
@@ -314,7 +314,7 @@ const App: React.FC = () => {
                 className="px-12 py-5 text-lg shadow-[0_0_30px_rgba(6,182,212,0.2)] hover:scale-105"
                 onClick={() => window.open(EVENT_DATA.registrationLink, '_blank')}
               >
-                Obtener Cupo Gratuito <ArrowRight className="inline-block ml-2" size={20} />
+                Obtener Cupo Gratuito <Zap className="inline-block ml-2 fill-current animate-pulse" size={20} />
               </Button>
               <p className="mt-8 text-slate-600 text-[10px] uppercase tracking-[0.2em] font-bold">
                 Cortesía de Audio Concept Panamá & LiveSync PRO
