@@ -17,3 +17,8 @@ export interface AudienceProfile {
   percentage: number;
   description: string;
 }
+
+export interface PainPoint {
+  question: string;
+  solution: string;
+}

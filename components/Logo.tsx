@@ -7,31 +7,37 @@ interface LogoProps {
 
 const Logo: React.FC<LogoProps> = ({ className = "" }) => {
   return (
-    <div className={`flex items-center gap-4 ${className}`}>
-      {/* Imagen del Logo con efecto de resplandor */}
-      <div className="relative w-14 h-14 group flex-shrink-0">
-        {/* Resplandor de fondo (Aura Cyan) */}
-        <div className="absolute inset-0 bg-cyan-500 blur-2xl opacity-30 group-hover:opacity-50 transition-opacity rounded-full"></div>
-        
-        {/* Imagen del Logo Oficial */}
-        <img 
-          src="https://hostedimages-cdn.aweber-static.com/MjM0MTQ0NQ==/optimized/20657f92efa544489526caee3beef9d2.png" 
-          alt="LiveSync Pro Logo" 
-          className="relative w-full h-full object-contain opacity-100 transition-transform group-hover:scale-105 duration-500"
-        />
+    <div className={`flex items-center gap-6 md:gap-10 ${className}`}>
+      {/* LiveSync Pro Side */}
+      <div className="flex items-center gap-3 md:gap-4">
+        <div className="relative w-10 h-10 md:w-12 md:h-12 group flex-shrink-0">
+          <div className="absolute inset-0 bg-cyan-500 blur-xl opacity-20 group-hover:opacity-40 transition-opacity rounded-full"></div>
+          <img 
+            src="https://hostedimages-cdn.aweber-static.com/MjM0MTQ0NQ==/optimized/20657f92efa544489526caee3beef9d2.png" 
+            alt="LiveSync Pro Logo" 
+            className="relative w-full h-full object-contain transition-transform group-hover:scale-105 duration-500"
+          />
+        </div>
+        <div className="flex flex-col items-start leading-none">
+          <h1 className="text-sm md:text-base font-bold text-white tracking-[0.15em] uppercase">
+            LiveSync <span className="gradient-text">PRO</span>
+          </h1>
+          <p className="text-white/60 text-[7px] md:text-[8px] uppercase tracking-[0.2em] mt-1 font-medium whitespace-nowrap">
+            System Engineering Suite
+          </p>
+        </div>
       </div>
 
-      {/* Contenedor de Texto a la derecha */}
-      <div className="flex flex-col items-start">
-        {/* Título Principal: Blanco con PRO en degradado */}
-        <h1 className="text-xl font-bold text-white tracking-[0.15em] uppercase leading-tight">
-          LiveSync <span className="gradient-text">PRO</span>
-        </h1>
-        
-        {/* Subtítulo: Blanco mate */}
-        <p className="text-white text-[9px] uppercase tracking-[0.2em] mt-0.5 opacity-90 font-medium">
-          System Engineering Suite
-        </p>
+      {/* Elegant Divider */}
+      <div className="h-10 w-px bg-white/10 hidden sm:block"></div>
+
+      {/* Audio Concept Side - Maximum Visibility */}
+      <div className="relative w-48 md:w-80 group flex-shrink-0">
+        <img 
+          src="https://audioconcept.com.pa/wp-content/uploads/2021/06/ACPANR-LOGO.png.webp" 
+          alt="Audio Concept Logo" 
+          className="w-full h-auto object-contain brightness-0 invert opacity-95 group-hover:opacity-100 transition-all duration-500"
+        />
       </div>
     </div>
   );

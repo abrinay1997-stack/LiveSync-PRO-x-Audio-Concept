@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Activity, Clock, MapPin, Users, Target, Calendar } from 'lucide-react';
-import { AgendaItem, Objective, AudienceProfile } from './types';
+import { AgendaItem, Objective, AudienceProfile, PainPoint } from './types';
 
 export const COLORS = {
   bgPrimary: '#050505',
@@ -20,71 +20,94 @@ export const EVENT_DATA = {
   concept: "Taller técnico avanzado de diseño de sistemas y flujo de trabajo FOH",
   duration: "3 horas de inmersión técnica",
   location: "Showroom Audio Concept, Plaza 61, Obarrio, Panamá",
+  googleMapsLink: "https://maps.app.goo.gl/gSpLztjafUZtK3tT6",
   capacity: "Cupos estrictamente limitados",
-  registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSdJw1GuWixvJT0Q8KhUoKwixOdM91Ga_mexRlWi3jKPbew20Q/viewform?usp=header"
+  registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSdJw1GuWixvJT0Q8KhUoKwixOdM91Ga_mexRlWi3jKPbew20Q/viewform?usp=header",
+  socials: {
+    audioconcept: {
+      facebook: "https://www.facebook.com/Audioconcept.com.pa",
+      instagram: "https://www.instagram.com/audioconcept_pa/",
+      web: "https://audioconcept.com.pa/"
+    },
+    livesyncpro: {
+      instagram: "https://www.instagram.com/livesyncpro/",
+      web: "https://livesyncpro.com/"
+    }
+  }
 };
+
+export const PAIN_POINTS: PainPoint[] = [
+  {
+    question: "¿Cansado de que tu sistema no responda igual en todas las zonas del venue?",
+    solution: "Aprende a garantizar una respuesta de frecuencia uniforme mediante metodologías de diseño de sistemas de alta precisión."
+  },
+  {
+    question: "¿Pierdes horas tratando de alinear la fase de tus subs con el arreglo principal?",
+    solution: "Optimiza tu flujo de trabajo y reduce el ajuste de fase de horas a minutos integrando el ecosistema LiveSync Pro en tu FOH."
+  },
+  {
+    question: "¿Tus mezclas pierden impacto debido a cancelaciones acústicas no detectadas?",
+    solution: "Identifica y resuelve problemas críticos de fase antes del show con técnicas avanzadas de medición y predicción."
+  }
+];
 
 export const AGENDA: AgendaItem[] = [
   {
     time: "6:00 PM",
     title: "Apertura y Technical Showcase",
     details: [
-      "Recepción de invitados y acreditación técnica",
-      "Exhibición de hardware de última generación",
-      "Networking de apertura con la comunidad de ingeniería"
+      "Acreditación técnica",
+      "Exhibición de hardware y networking inicial"
     ]
   },
   {
     time: "6:30 PM",
-    title: "Keynote: Innovación en el Diseño de Sistemas",
-    speaker: "Dirección Técnica Audio Concept",
+    title: "Keynote: El Nuevo Estándar del FOH",
+    speaker: "Abrinay",
     details: [
-      "Tendencias globales en audio profesional 2024",
-      "La evolución del flujo de trabajo: De la teoría a la precisión"
+      "Visión estratégica de la ingeniería sonora 2026",
+      "Del concepto a la ejecución sin errores"
     ]
   },
   {
     time: "6:45 PM",
-    title: "Masterclass: Ecosistema LiveSync PRO",
-    speaker: "Especialistas de Producto",
+    title: "Masterclass: Flujos de Trabajo de Alta Eficiencia",
+    speaker: "Abrinay",
     details: [
-      "Optimización de tiempos en montajes de gran escala",
-      "Análisis de caso: Ingeniería aplicada en el Teatro Anayansi",
-      "Integración de flujos de trabajo colaborativos"
+      "Secretos de optimización en montajes de gran escala",
+      "Integración LiveSync PRO: El fin de las horas perdidas"
     ]
   },
   {
     time: "7:45 PM",
-    title: "Demostración Práctica y Simulación",
-    speaker: "Ingenieros de Sistemas Invitados",
+    title: "Laboratorio Práctico y Simulación Real",
+    speaker: "Abrinay",
     details: [
-      "Uso de herramientas de cálculo avanzado en tiempo real",
-      "Resolución de desafíos técnicos comunes en venues complejos",
-      "Workflow de alta eficiencia para giras y eventos corporativos"
+      "Resolución de desafíos acústicos complejos en vivo",
+      "Técnicas de precisión aplicadas"
     ]
   },
   {
     time: "8:30 PM",
-    title: "Panel de Expertos y Mesa Redonda",
-    speaker: "Senior System Engineers",
+    title: "Mesa Redonda: Consultoría Técnica",
+    speaker: "Abrinay",
     details: [
-      "Sesión interactiva de preguntas y respuestas técnicas",
-      "Intercambio de experiencias y mejores prácticas",
-      "Consultoría rápida sobre escenarios reales planteados por asistentes"
+      "Sesión interactiva de Q&A",
+      "Análisis de casos planteados por los asistentes"
     ]
   },
   {
     time: "8:50 PM",
-    title: "Cierre y Beneficios Exclusivos",
+    title: "Cierre y Anuncios Exclusivos",
     details: [
-      "Presentación de beneficios especiales para asistentes",
-      "Anuncio de certificaciones y próximos pasos",
-      "Networking final y cierre del Workshop"
+      "Beneficios para la comunidad PRO",
+      "Certificaciones y networking final"
     ]
   }
 ];
 
 export const OBJECTIVES: Objective[] = [
+  { text: "Aprender a usar LiveSync Pro para optimización FOH", isPrimary: true },
   { text: "Dominar metodologías avanzadas de System Design", isPrimary: true },
   { text: "Reducir márgenes de error en montajes de alta complejidad", isPrimary: true },
   { text: "Conectar con los líderes de la industria del audio en Panamá", isPrimary: true },
